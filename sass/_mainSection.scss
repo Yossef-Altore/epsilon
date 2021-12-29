@@ -1,0 +1,187 @@
+#mainSection {
+  width: 100%;
+  height: 100%;
+
+  #allWrapper {
+    background-color: rgb(186, 180, 180);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    #firstDivOfMainSection {
+      background-color: rgb(218, 209, 209);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 50px 10px 50px;
+      margin-top: 10px;
+      .leftDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        div.left-div-imgs {
+          display: flex;
+          align-items: center;
+          gap: 2%;
+          img {
+            width: 30%;
+          }
+        }
+        span {
+          font-size: 1.2rem;
+        }
+        div {
+          button {
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+              box-shadow: 5px 5px 5px black;
+            }
+          }
+        }
+      }
+      .middleDiv {
+        display: flex;
+        gap: 50px;
+        div {
+          display: flex;
+          flex-direction: column;
+          background-color: rgb(19, 18, 18);
+          padding: 5px;
+          color: white;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          border-radius: 10%;
+          height: 230px;
+
+          div.top-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            img {
+              background-color: white;
+              width: 20%;
+              border-radius: 50%;
+              padding: 2%;
+              cursor: pointer;
+            }
+          }
+          img {
+            width: 25%;
+            border-radius: 10%;
+          }
+          span {
+            font-size: 1rem;
+            background-color: black;
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10%;
+            opacity: 0.7;
+          }
+        }
+      }
+      .OnRightDiv {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        justify-content: center;
+        gap: 25px;
+        direction: rtl;
+        div {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          img {
+            width: 30%;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+            cursor: pointer;
+          }
+          span {
+            width: 30%;
+            font-size: 2.5vw;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+            cursor: pointer;
+            &:hover {
+              color: orange;
+            }
+          }
+          span.checked {
+            color: orange;
+          }
+        }
+      }
+    }
+    #addYourOwnDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      button {
+        padding: 10px 50px;
+        background-color: rgb(57, 131, 187);
+        color: white;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+    #secondDivOfMainSection {
+      @extend #firstDivOfMainSection;
+      .middleDiv {
+        .firstIcon {
+          background-image: url(../images/A-tech-logo.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-clip: border-box;
+          background-color: white;
+          .top-icons {
+            background-color: unset;
+            align-items: flex-start;
+            img {
+              border: 0.5px solid black;
+            }
+          }
+        }
+        .secondIcon {
+          @extend .firstIcon;
+          background-image: url(../images/robot.jpg);
+        }
+        .thirdIcon {
+          @extend .firstIcon;
+          background-image: url(../images/android-vs-apple.jpg);
+        }
+      }
+    }
+    #thirdDivOfMainSection {
+      @extend #secondDivOfMainSection;
+      .middleDiv {
+        .firstIcon {
+          background-image: url(../images/audio-wave.jpg);
+        }
+      }
+    }
+    #fourthDivOfMainSection {
+      @extend #secondDivOfMainSection;
+      .middleDiv {
+        .firstIcon {
+          background-image: url(../images/image-for-first-choice.jpg);
+        }
+        .secondIcon {
+          background-image: url(../images/image-for-second-choice.jpg);
+        }
+        .thirdIcon {
+          background-image: url(../images/image-for-third-choice.jpg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(186, 180, 180);
+}
+header {
+  #mainHeaderDiv {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-bottom: 1px solid black;
+    background-image: url(../images/main-image-on-top.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    #topDiv {
+      height: 20%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: #b6acac, $alpha: 0.9);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      #logoAndHeader {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img {
+          height: 100%;
+          border-radius: 30%;
+        }
+        h1 {
+          font-family: $mainFont;
+        }
+      }
+      #threeDots {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2%;
+        gap: 4%;
+        cursor: pointer;
+        span {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: black;
+          &:nth-child(1) {
+            background-color: rgb(114, 130, 177);
+          }
+          &:nth-child(2) {
+            background-color: rgb(94, 115, 179);
+          }
+          &:nth-child(3) {
+            background-color: rgb(69, 97, 184);
+          }
+        }
+      }
+    }
+    #bottomDiv {
+      position: relative;
+      top: 80%;
+      left: 0;
+      height: 20%;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      #welcomeDiv {
+        color: white;
+        font-family: $mainFont;
+      }
+      #bottomDivIconsOnRight {
+        img {
+          width: 70px;
+          height: 100%;
+          background-color: white;
+          border-radius: 30%;
+          margin-left: 10px;
+          padding: 3%;
+        }
+      }
+    }
+  }
+}

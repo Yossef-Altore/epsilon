@@ -1,0 +1,52 @@
+@keyframes slideDown {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 30vh;
+  }
+}
+
+#socialMediaShare {
+  width: 60vw;
+  height: 40vh;
+  position: fixed;
+  top: 30vh;
+  left: 20vw;
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  opacity: 0.9;
+  background-image: url(../images/social-media-3d-icons/bgimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  animation-name: slideDown;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  div#socialMediaShareMainDiv {
+    #closeModalSocialMediaShare {
+      position: relative;
+      top: 10px;
+      left: 10px;
+      font-size: 2vw;
+      padding: 10px;
+      border-radius: 30%;
+      cursor: pointer;
+    }
+    div#socialMediaIcons {
+      width: 100%;
+      margin-top: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      img {
+        width: 10%;
+        cursor: pointer;
+        &:hover {
+          transform: translate3d(10px, -10px, 100px);
+        }
+      }
+    }
+  }
+}

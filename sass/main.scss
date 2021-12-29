@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+$mainFont: "Oswald", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "header";
+@import "mainSection";
+@import "socialMediaPopup";
